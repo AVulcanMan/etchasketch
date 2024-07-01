@@ -1,0 +1,18 @@
+.items {
+    box-sizing: border-box;
+    border: 1px solid black; /* Optional: to visualize the grid items */
+    /* width: calc(100% / 16); /* Each item will be 1/16th of the container's width */
+    /* height: calc(100% / 16); /* Each item will be 1/16th of the container's height */
+}
+#container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:480px;
+    height:480px;
+    justify-content: space-between;
+    margin: 15px;
+}
+#create {
+    margin:15px;
+}
