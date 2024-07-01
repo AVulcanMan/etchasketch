@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
     nueva.addEventListener('click', function() {
         container.textContent = "";
         let choice = prompt("How big do you want it?", 16);
+        if (choice>100) {
+            alert ("This grid can support a total of 100x100 squares");
+            choice = 100;
+        }
         createGrid(choice)
     });
 });
